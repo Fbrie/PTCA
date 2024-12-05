@@ -1,0 +1,170 @@
+/* src/App.css */
+
+/* General App Styling */
+.App {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* App Logo */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+/* Header Styling */
+.App-header {
+  background-color: #001f3d;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Role Toggle Button */
+.role-toggle-btn {
+  background-color: #ff9800;
+  padding: 12px 24px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.role-toggle-btn:hover {
+  background-color: #e68900;
+}
+
+/* Content Section Styling */
+.content-section {
+  margin-top: 50px;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Card Styling */
+.card {
+  background-color: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.card button {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #007B9E;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+/* Navigation Bar Styling */
+nav {
+  background-color: #282c34;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.progress-view {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-view h2 {
+  color: #333;
+}
+
+.progress-view ul {
+  list-style: none;
+  padding: 0;
+}
+
+.progress-view ul li {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.progress-view ul li strong {
+  color: #333;
+}
+
+/* Media Query for Reduced Motion */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Animation for Logo */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
