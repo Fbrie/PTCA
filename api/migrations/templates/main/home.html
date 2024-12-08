@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent-Teacher App Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Parent-Teacher App</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'teacher_dashboard' %}">Teacher Dashboard</a></li>
+                <li><a href="{% url 'parent_dashboard' %}">Parent Dashboard</a></li>
+                <li><a href="{% url 'messages' %}">Messages</a></li>
+                <li><a href="{% url 'meetings' %}">Meetings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome to the Portal</h2>
+            <p>This application connects parents and teachers to facilitate better communication, student progress tracking, and scheduling meetings.</p>
+        </section>
+
+        <section>
+            <h3>Features:</h3>
+            <ul>
+                <li><strong>Messages:</strong> Send and receive messages between parents and teachers.</li>
+                <li><strong>Progress Reports:</strong> View and track student progress in various subjects.</li>
+                <li><strong>Meetings:</strong> Schedule and manage parent-teacher meetings.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Parent-Teacher App</p>
+    </footer>
+</body>
+</html>
