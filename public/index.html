@@ -1,53 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    
-    <!-- Custom Meta Tags for PTCA -->
-    <meta
-      name="description"
-      content="A seamless communication platform connecting parents and teachers for student progress updates, meeting scheduling, and effective collaboration."
-    />
-    <meta
-      name="keywords"
-      content= "Parent-Teacher Communication, Education, School App, Parent Communication, Teacher Feedback, Student Progress, School Collaboration"
-    />
-    <meta
-      name="author"
-      content=PTCA
-    />
-    
-    <!-- Apple Touch Icon for iOS devices -->
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    
-    <!-- Web Manifest to support Progressive Web App (PWA) behavior -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
-    <!-- Open Graph Meta Tags (for social media sharing) -->
-    <meta property="og:title" content="Parent Teacher Communication App" />
-    <meta
-      property="og:description"
-      content="Stay connected with teachers and track your child's progress, schedule meetings, and exchange messages."
-    />
-    <meta property="og:image" content="%PUBLIC_URL%/logo192.png" />
-    <meta property="og:url" content="https://your-app-url.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://localhost:3000" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTCA - Parent-Teacher Communication</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .main-content {
+            margin-top: 30px;
+        }
+        .card {
+            margin: 15px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to PTCA</h1>
+        <p>Your communication hub for Parents and Teachers</p>
+    </div>
 
-    
-    <title>Parent Teacher Communication App</title>
-  </head>
-  <body>
-    <!-- Displayed when JavaScript is disabled -->
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    
-    <!-- The root element where React will mount the app -->
-    <div id="root"></div>
-    
-    <!-- You can add additional scripts or tracking tags here (e.g., Google Analytics) -->
-  </body>
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Announcements</h5>
+                        <p class="card-text">Check the latest updates from your teacher here. Stay informed about school events, meetings, and other important notices.</p>
+                        <a href="#" class="btn btn-primary">View Announcements</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Messages</h5>
+                        <p class="card-text">Send and receive messages between parents and teachers to keep track of student progress, activities, and more.</p>
+                        <a href="#" class="btn btn-primary">View Messages</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Upcoming Events</h5>
+                        <p class="card-text">Stay updated with upcoming parent-teacher meetings, school activities, and events.</p>
+                        <a href="#" class="btn btn-primary">View Events</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Student Progress</h5>
+                        <p class="card-text">View your child's academic progress, grades, and teacher feedback.</p>
+                        <a href="#" class="btn btn-primary">View Progress</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 PTCA - Parent-Teacher Communication App</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
-

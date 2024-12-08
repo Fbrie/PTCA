@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render , request
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login
@@ -137,4 +137,9 @@ def login_view(request):
 class ProgressView(View):
     def get(self, request):
         return JsonResponse({'progress': 50})
+
+
+def index(request):
+    return render(request, 'index.html')  # Indented properly
+
 

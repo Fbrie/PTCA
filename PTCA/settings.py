@@ -15,15 +15,14 @@ ALLOWED_HOSTS = []  # Add your domain or IP address in production
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
-    'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'PTCA',  # Name of your app (formerly parent_teacher_app)
+    'PTCA',  
     'rest_framework',
     'rest_framework_simplejwt',
-    'api',
+    'django.contrib.auth',
 
 ]
 
@@ -66,10 +65,11 @@ WSGI_APPLICATION = 'PTCA.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # No change here
-        'NAME': 'ptca_db',
+        'NAME': 'PTCA_db',
         'USER': 'root',
         'PASSWORD': 'Hampty2030',
-        'HOST': 'localhost 127.0.0.1',
+        'HOST': '127.0.0.1',  # Replace 'localhost 127.0.0.1' with this
+
         'PORT': '3306',
         'OPTIONS': {
             'use_pure': True,  # Enables the MySQL Connector mode
@@ -103,11 +103,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Authentication settings
 LOGIN_URL = 'login'  # Redirect for unauthenticated users
 # In settings.py
-AUTH_USER_MODEL = 'api.User'
+AUTH_USER_MODEL = 'PTCA.User'
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Custom user model
-AUTH_USER_MODEL = 'PTCA.User'  # Refers to the custom user model in PTCA app
+
 
