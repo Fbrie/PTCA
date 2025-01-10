@@ -1,0 +1,23 @@
+/* Navbar styling */
+.navbar {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Make links appear in a row */
+    justify-content: center; /* Center the links */
+  }
+  
+  .navbar li {
+    margin: 0 15px; /* Add spacing between links */
+  }
+  
+  .navbar a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007BFF; /* Link color */
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    color: #0056b3; /* Darker color on hover */
+  }
+  
